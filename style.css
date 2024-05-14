@@ -3,16 +3,16 @@
 }
 
 body {
-  max-width: 1440px;
   margin: 0 auto;
 }
 
 header {
-  max-width: 1440px;
   background-color: #0c0c0c;
 }
 
 .head {
+  max-width: 1440px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   color: white;
@@ -38,15 +38,20 @@ header {
 
 /*main*/
 
-.wellcome {
+.welcome {
   background-image: url(/image/Welcome.jpg);
+  min-height: 600px;
+}
+
+.containerWelcome {
   max-width: 1440px;
   min-height: 600px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
 }
 
-.tittleWellcome {
+.tittleWelcome {
   max-width: 600px;
   padding: 35px 40px;
   background-color: black;
@@ -66,6 +71,8 @@ h1 {
 
 .about {
   padding: 0 20px;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .subtittle {
@@ -82,7 +89,7 @@ h1 {
 .strip {
   max-width: 50px;
   margin: 20px auto;
-  border: 1px solid #0c0c0c;
+  border-bottom: 1px solid #0c0c0c;
 }
 
 .textAbout {
@@ -104,6 +111,11 @@ h1 {
   padding: 40px 0;
 }
 
+.favorites {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 .textFavorites {
   font-family: "Inter", sans-serif;
   font-weight: 700;
@@ -112,16 +124,20 @@ h1 {
 }
 
 .seasons {
-  padding-left: 20px;
+  padding: 0 0 40px 20px;
   font-family: "Inter", sans-serif;
   font-size: 20px;
+}
+
+input[type="radio"]:checked + label {
+  font-weight: bold;
 }
 
 .books {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 0 20px 40px 0;
   gap: 40px;
 }
 
@@ -130,24 +146,23 @@ h1 {
   width: 550px;
   height: 555px;
   position: relative;
+  margin-right: 40px;
 }
 .lineBook {
   max-width: 50px;
-  border: 1px solid #bb945f;
+  border-bottom: 1px solid #bb945f;
   margin: 10px 20px;
 }
-h5 {
+.staffPicks {
   font-family: "Forum", sans-serif;
   font-size: 20px;
   letter-spacing: 2px;
-  margin-left: 20px;
   margin: 20px 0 0 20px;
 }
-h6 {
+.nameBook {
   font-family: "Inter", sans-serif;
   font-weight: 700;
   font-size: 15px;
-  margin-left: 20px;
   letter-spacing: 2px;
 }
 .textBook {
@@ -182,6 +197,8 @@ h6 {
 
 .coffeeShop {
   padding: 0 20px;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .coffeeShopText {
   font-family: "Inter", sans-serif;
@@ -225,7 +242,7 @@ h6 {
 .line {
   width: 100px;
   height: 0;
-  border: 1px solid #bb945f;
+  border-bottom: 1px solid #bb945f;
   margin: 0 60px;
 }
 
@@ -243,7 +260,9 @@ h6 {
 }
 
 .contacts {
-  padding: 0 20px;
+  padding: 0 20px 40px 0;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .contactsInfo {
   display: flex;
@@ -279,6 +298,8 @@ h6 {
 }
 .libraryCards {
   padding: 0 20px 40px 20px;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .findReaderCard {
   display: flex;
@@ -302,7 +323,7 @@ h6 {
 .filling {
   margin: 20px;
   background-color: #bb945f;
-  padding-bottom: 20px;
+  padding: 20px;
 }
 h6 {
   font-family: "Forum", sans-serif;
@@ -311,14 +332,12 @@ h6 {
   line-height: 200%;
   letter-spacing: 2px;
   margin: 0 auto;
-  padding-left: 20px;
 }
 
 .name {
-  width: 89%;
+  width: 100%;
   min-height: 66px;
   border-radius: 10px;
-  margin: 0 20px;
   border: none;
   padding-left: 20px;
   margin-bottom: 25px;
@@ -328,10 +347,9 @@ h6 {
 }
 
 .number {
-  width: 89%;
+  width: 100%;
   min-height: 66px;
   border-radius: 10px;
-  margin: 0 20px;
   border: none;
   padding-left: 20px;
   font-family: "Forum", sans-serif;
@@ -392,6 +410,8 @@ footer {
 }
 
 .topFooter {
+  max-width: 1440px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -417,11 +437,13 @@ footer {
 }
 
 .border {
-  border: 1px solid white;
+  border-bottom: 1px solid white;
   margin: 0 20px;
 }
 
 .botFooter {
+  max-width: 1440px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
