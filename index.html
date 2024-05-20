@@ -17,11 +17,17 @@
       <div class="head">
         <p class="tittleHead">Brooklyn Public Library</p>
         <div class="innerHead">
-          <p class="textHead">About</p>
-          <p class="textHead">Favorites</p>
-          <p class="textHead">Coffee shop</p>
-          <p class="textHead">Contacts</p>
-          <p class="textHead">Library Card</p>
+          <button class="burger" type="button">
+            <span class="btnLine"></span>
+            <span class="btnLine"></span>
+            <span class="btnLine"></span>
+            <span class="btnLine"></span>
+          </button>
+          <a href="#about" class="textHead">About</a>
+          <a href="#favorites" class="textHead">Favorites</a>
+          <a href="#coffeeShop" class="textHead">Coffee shop</a>
+          <a href="#contacts" class="textHead">Contacts</a>
+          <a href="#libraryCards" class="textHead">Library Card</a>
           <img class="imageHead" src="/image/menuIcon.svg" alt="menuIcon" />
         </div>
       </div>
@@ -38,7 +44,7 @@
           </div>
         </div>
       </div>
-      <div class="about">
+      <div class="about" id="about">
         <div class="subtittleLine">
           <h3 class="subtittle">About</h3>
           <div class="strip"></div>
@@ -47,14 +53,32 @@
           The Brooklyn Library is a free workspace, a large number of books and
           a cozy coffee shop inside
         </p>
-        <div class="imageAbout">
-          <img src="image/imgAbout1.jpg" alt="image1" />
-          <img src="image/imgAbout2.jpg" alt="image2" />
-          <img src="image/imgAbout3.jpg" alt="image3" />
+        <div class="slider-container">
+          <div class="slider">
+            <img class="slide" src="image/imgAbout1.jpg" alt="image1" />
+            <img class="slide" src="image/imgAbout2.jpg" alt="image2" />
+            <img class="slide" src="image/imgAbout3.jpg" alt="image3" />
+            <img class="slide" src="image/imgAbout4.jpg" alt="image4" />
+            <img class="slide" src="image/imgAbout5.jpg" alt="image5" />
+          </div>
+          <button
+            class="prev-button"
+            type="button"
+            aria-label="Посмотреть предыдущий слайд"
+          >
+            &lt;
+          </button>
+          <button
+            class="next-button"
+            type="button"
+            aria-label="Посмотреть следующий слайд"
+          >
+            &gt;
+          </button>
         </div>
         <div class="dot"><img src="/image/dot.svg" alt="dot" /></div>
       </div>
-      <div class="favorites">
+      <div class="favorites" id="favorites">
         <div class="subtittleLine">
           <h3 class="subtittle">Favorites</h3>
           <div class="strip"></div>
@@ -138,7 +162,7 @@
           </div>
         </div>
       </div>
-      <div class="coffeeShop">
+      <div class="coffeeShop" id="coffeeShop">
         <div class="subtittleLine">
           <h3 class="subtittle">Coffee shop</h3>
           <div class="strip"></div>
@@ -218,7 +242,7 @@
           </div>
         </div>
       </div>
-      <div class="contacts">
+      <div class="contacts" id="contacts">
         <div class="subtittleLine">
           <h3 class="subtittle">Our Contacts</h3>
           <div class="strip"></div>
@@ -239,7 +263,7 @@
           <div class="map"><img src="/image/map.jpg" alt="" /></div>
         </div>
       </div>
-      <div class="libraryCards">
+      <div class="libraryCards" id="libraryCards">
         <div class="subtittleLine">
           <h3 class="subtittle">Digital Library Cards</h3>
           <div class="strip"></div>
@@ -314,5 +338,6 @@
         <p class="botFooterText">Username</p>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
