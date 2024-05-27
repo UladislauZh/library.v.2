@@ -28,6 +28,14 @@ header {
   gap: 30px;
   text-align: center;
 }
+
+.menuHead {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  text-align: center;
+}
+
 .textHead {
   text-decoration: none;
   font-family: Inter, sans-serif;
@@ -216,7 +224,7 @@ input[type="radio"]:checked + label {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0 20px 40px 0;
+  padding: 0 20px 40px 20px;
   gap: 40px;
 }
 
@@ -243,6 +251,7 @@ input[type="radio"]:checked + label {
   font-weight: 700;
   font-size: 15px;
   letter-spacing: 2px;
+  padding-left: 20px;
 }
 .textBook {
   font-family: "Inter", sans-serif;
@@ -291,6 +300,7 @@ input[type="radio"]:checked + label {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 40px;
 }
 
 .menuCoffeeTea .menuName {
@@ -349,7 +359,9 @@ input[type="radio"]:checked + label {
   flex-wrap: wrap;
   padding-top: 20px;
 }
-
+.generalInformations {
+  padding-left: 20px;
+}
 .inquiries {
   font-family: "Inter", sans-serif;
   font-weight: 700;
@@ -549,6 +561,20 @@ footer {
     display: none;
   }
 }
+
+@media (max-width: 1300px) {
+  .contactsInfo {
+    gap: 35px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1200px) {
+  .book {
+    margin: 0 auto;
+  }
+}
+
 @media (max-width: 1150px) {
   .innerHead {
     gap: 20px;
@@ -557,11 +583,44 @@ footer {
   .tittleHead {
     padding-right: 30px;
   }
+
+  .findReaderCard {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .readerCard {
+    text-align: center;
+  }
+
+  .buttonReader {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  .menuDessertsCaces {
+    margin-left: auto;
+  }
 }
 
 @media (max-width: 768px) {
   .imageHead {
     margin: 0 auto;
+  }
+
+  .contactsInfo {
+    gap: 0;
+    justify-content: space-between;
+  }
+
+  .map {
+    padding-top: 100px;
+    margin: 0 auto;
+  }
+
+  .mapImg {
+    width: 100%;
   }
 
   .burger {
@@ -612,12 +671,29 @@ footer {
   }
 
   .textHead {
-    display: none;
-    /*position: absolute;
+  }
+
+  .menuHead {
+    position: absolute;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
-    background-color: #000;*/
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    transform: translateY(-100%);
+  }
+
+  .menu-open .menuHead {
+    transform: translateY(0);
+  }
+
+  .innerHead img {
+    z-index: 50;
+    position: relative;
   }
 }
